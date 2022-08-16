@@ -6,58 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="96dp"
-        android:layout_marginEnd="1dp"
-        android:background="@color/verde_menu"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="634dp">
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:backgroundTint="@android:color/transparent"
-            android:text="Início"
-            android:textSize="12sp" />
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="111dp"
-            android:layout_height="fill_parent"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:text="Serviços"
-            android:textSize="12sp" />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="106dp"
-            android:layout_height="fill_parent"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:text="Atividades"
-            android:textSize="10dp" />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:text="Perfil"
-            android:textSize="12dp" />
-
-    </LinearLayout>
-
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="330dp"
@@ -71,6 +19,15 @@
         app:layout_constraintEnd_toStartOf="@+id/imageButton3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_search"
+        tools:layout_editor_absoluteY="27dp" />
 
     <Button
         android:id="@+id/button"
@@ -178,13 +135,57 @@
             android:text="Pequena cirurgia" />
     </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="96dp"
+        android:layout_marginEnd="1dp"
+        android:background="@color/verde_menu"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_search"
-        tools:layout_editor_absoluteY="30dp" />
+        tools:layout_editor_absoluteY="634dp">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@android:color/transparent"
+            android:text="Início"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="111dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="servicosAct"
+            android:text="Serviços"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="106dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="Atividades"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="Perfil"
+            android:textSize="12dp" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
